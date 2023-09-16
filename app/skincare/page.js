@@ -1,14 +1,14 @@
-import Link from "next/link";
-import React from "react";
+import Link from 'next/link'
+import React from 'react'
 
-const Makeup = () => {
+const Skincare = () => {
   return (
     <div>
-      <section className="text-gray-600 body-font">
+        <section className="text-gray-600 body-font">
         <div className="container px-5 py-24 mx-auto">
           <div className="flex flex-wrap justify-center -m-4">
             <Link
-              href="/product/tshirt"
+              href="/product/perfume"
               className="p-4 sm:w-1/2 lg:w-1/5 md:w-1/3 flex shadow-lg m-2 flex-col items-center"
             >
               <div>
@@ -16,7 +16,7 @@ const Makeup = () => {
                   <img
                     alt="ecommerce"
                     className="m-auto  h-[30vh] md:h-[36vh] justify-center"
-                    src="https://m.media-amazon.com/images/I/71k9RKiV0-L._AC_UL480_FMwebp_QL65_.jpg"
+                    src="https://m.media-amazon.com/images/I/81jQG6OJ6ML._AC_UL480_FMwebp_QL65_.jpg"
                   />
                 </div>
                 <div className="mt-4">
@@ -32,7 +32,7 @@ const Makeup = () => {
               </div>
             </Link>
             <Link
-              href="/product/tshirt"
+              href="/product/perfume"
               className="p-4 sm:w-1/2 lg:w-1/5 md:w-1/3 flex shadow-lg m-2 flex-col items-center"
             >
               <div>
@@ -40,7 +40,7 @@ const Makeup = () => {
                   <img
                     alt="ecommerce"
                     className="m-auto  h-[30vh] md:h-[36vh] justify-center"
-                    src="https://m.media-amazon.com/images/I/71k9RKiV0-L._AC_UL480_FMwebp_QL65_.jpg"
+                    src="https://m.media-amazon.com/images/I/81jQG6OJ6ML._AC_UL480_FMwebp_QL65_.jpg"
                   />
                 </div>
                 <div className="mt-4">
@@ -56,7 +56,7 @@ const Makeup = () => {
               </div>
             </Link>
             <Link
-              href="/product/tshirt"
+              href="/product/perfume"
               className="p-4 sm:w-1/2 lg:w-1/5 md:w-1/3 flex shadow-lg m-2 flex-col items-center"
             >
               <div>
@@ -64,7 +64,7 @@ const Makeup = () => {
                   <img
                     alt="ecommerce"
                     className="m-auto  h-[30vh] md:h-[36vh] justify-center"
-                    src="https://m.media-amazon.com/images/I/71k9RKiV0-L._AC_UL480_FMwebp_QL65_.jpg"
+                    src="https://m.media-amazon.com/images/I/81jQG6OJ6ML._AC_UL480_FMwebp_QL65_.jpg"
                   />
                 </div>
                 <div className="mt-4">
@@ -80,7 +80,7 @@ const Makeup = () => {
               </div>
             </Link>
             <Link
-              href="/product/tshirt"
+              href="/product/perfume"
               className="p-4 sm:w-1/2 lg:w-1/5 md:w-1/3 flex shadow-lg m-2 flex-col items-center"
             >
               <div>
@@ -88,7 +88,7 @@ const Makeup = () => {
                   <img
                     alt="ecommerce"
                     className="m-auto  h-[30vh] md:h-[36vh] justify-center"
-                    src="https://m.media-amazon.com/images/I/71k9RKiV0-L._AC_UL480_FMwebp_QL65_.jpg"
+                    src="https://m.media-amazon.com/images/I/81jQG6OJ6ML._AC_UL480_FMwebp_QL65_.jpg"
                   />
                 </div>
                 <div className="mt-4">
@@ -104,7 +104,7 @@ const Makeup = () => {
               </div>
             </Link>
             <Link
-              href="/product/tshirt"
+              href="/product/perfume"
               className="p-4 sm:w-1/2 lg:w-1/5 md:w-1/3 flex shadow-lg m-2 flex-col items-center"
             >
               <div>
@@ -112,7 +112,7 @@ const Makeup = () => {
                   <img
                     alt="ecommerce"
                     className="m-auto  h-[30vh] md:h-[36vh] justify-center"
-                    src="https://m.media-amazon.com/images/I/71k9RKiV0-L._AC_UL480_FMwebp_QL65_.jpg"
+                    src="https://m.media-amazon.com/images/I/81jQG6OJ6ML._AC_UL480_FMwebp_QL65_.jpg"
                   />
                 </div>
                 <div className="mt-4">
@@ -128,7 +128,7 @@ const Makeup = () => {
               </div>
             </Link>
             <Link
-              href="/product/tshirt"
+              href="/product/perfume"
               className="p-4 sm:w-1/2 lg:w-1/5 md:w-1/3 flex shadow-lg m-2 flex-col items-center"
             >
               <div>
@@ -136,7 +136,7 @@ const Makeup = () => {
                   <img
                     alt="ecommerce"
                     className="m-auto  h-[30vh] md:h-[36vh] justify-center"
-                    src="https://m.media-amazon.com/images/I/71k9RKiV0-L._AC_UL480_FMwebp_QL65_.jpg"
+                    src="https://m.media-amazon.com/images/I/81jQG6OJ6ML._AC_UL480_FMwebp_QL65_.jpg"
                   />
                 </div>
                 <div className="mt-4">
@@ -152,7 +152,7 @@ const Makeup = () => {
               </div>
             </Link>
             <Link
-              href="/product/tshirt"
+              href="/product/perfume"
               className="p-4 sm:w-1/2 lg:w-1/5 md:w-1/3 flex shadow-lg m-2 flex-col items-center"
             >
               <div>
@@ -160,7 +160,7 @@ const Makeup = () => {
                   <img
                     alt="ecommerce"
                     className="m-auto  h-[30vh] md:h-[36vh] justify-center"
-                    src="https://m.media-amazon.com/images/I/71k9RKiV0-L._AC_UL480_FMwebp_QL65_.jpg"
+                    src="https://m.media-amazon.com/images/I/81jQG6OJ6ML._AC_UL480_FMwebp_QL65_.jpg"
                   />
                 </div>
                 <div className="mt-4">
@@ -176,7 +176,7 @@ const Makeup = () => {
               </div>
             </Link>
             <Link
-              href="/product/tshirt"
+              href="/product/perfume"
               className="p-4 sm:w-1/2 lg:w-1/5 md:w-1/3 flex shadow-lg m-2 flex-col items-center"
             >
               <div>
@@ -184,7 +184,7 @@ const Makeup = () => {
                   <img
                     alt="ecommerce"
                     className="m-auto  h-[30vh] md:h-[36vh] justify-center"
-                    src="https://m.media-amazon.com/images/I/71k9RKiV0-L._AC_UL480_FMwebp_QL65_.jpg"
+                    src="https://m.media-amazon.com/images/I/81jQG6OJ6ML._AC_UL480_FMwebp_QL65_.jpg"
                   />
                 </div>
                 <div className="mt-4">
@@ -203,7 +203,7 @@ const Makeup = () => {
         </div>
       </section>
     </div>
-  );
-};
+  )
+}
 
-export default Makeup;
+export default Skincare

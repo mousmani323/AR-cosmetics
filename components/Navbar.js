@@ -1,12 +1,17 @@
+"use client"
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { FaShoppingCart } from "react-icons/fa";
+import Dropdown from "./Dropdown";
+
 
 const Navbar = () => {
+ 
+
   return (
     <div>
-      <header className="text-gray-500 body-font bg-red-200 mb-4">
+      <header className="text-gray-700 body-font bg-red-200 mb-4 shadow-md">
         <div className="container mx-auto flex flex-wrap p-4 flex-col md:flex-row items-center">
           <Link
             href={"/"}
@@ -22,16 +27,15 @@ const Navbar = () => {
             <span className="ml-3 text-xl">Al-Rehman Cosmetics</span>
           </Link>
           <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
-            <Link href="/products" className="mr-5 hover:text-gray-900">
-              Products
-            </Link>
-            <Link href="/blogs" className="mr-5 hover:text-gray-900">
+            <Dropdown />
+
+            <Link href="/blogs" className="mr-5 hover:text-gray-400">
               Blogs
             </Link>
-            <Link href="/contact" className="mr-5 hover:text-gray-900">
+            <Link href="/contact" className="mr-5 hover:text-gray-400">
               Contact us
             </Link>
-            <Link href="/about" className="mr-5 hover:text-gray-900">
+            <Link href="/about" className="mr-5 hover:text-gray-400">
               About us
             </Link>
           </nav>
