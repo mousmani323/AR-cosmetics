@@ -8,7 +8,7 @@ const Makeup = () => {
         <div className="container px-5 py-24 mx-auto">
           <div className="flex flex-wrap justify-center -m-4">
             <Link
-              href="/product/tshirt"
+              href="/product/makeup"
               className="p-4 sm:w-1/2 lg:w-1/5 md:w-1/3 flex shadow-lg m-2 flex-col items-center"
             >
               <div>
@@ -32,7 +32,7 @@ const Makeup = () => {
               </div>
             </Link>
             <Link
-              href="/product/tshirt"
+              href="/product/makeup"
               className="p-4 sm:w-1/2 lg:w-1/5 md:w-1/3 flex shadow-lg m-2 flex-col items-center"
             >
               <div>
@@ -56,7 +56,7 @@ const Makeup = () => {
               </div>
             </Link>
             <Link
-              href="/product/tshirt"
+              href="/product/makeup"
               className="p-4 sm:w-1/2 lg:w-1/5 md:w-1/3 flex shadow-lg m-2 flex-col items-center"
             >
               <div>
@@ -80,7 +80,7 @@ const Makeup = () => {
               </div>
             </Link>
             <Link
-              href="/product/tshirt"
+              href="/product/makeup"
               className="p-4 sm:w-1/2 lg:w-1/5 md:w-1/3 flex shadow-lg m-2 flex-col items-center"
             >
               <div>
@@ -104,7 +104,7 @@ const Makeup = () => {
               </div>
             </Link>
             <Link
-              href="/product/tshirt"
+              href="/product/makeup"
               className="p-4 sm:w-1/2 lg:w-1/5 md:w-1/3 flex shadow-lg m-2 flex-col items-center"
             >
               <div>
@@ -128,7 +128,7 @@ const Makeup = () => {
               </div>
             </Link>
             <Link
-              href="/product/tshirt"
+              href="/product/makeup"
               className="p-4 sm:w-1/2 lg:w-1/5 md:w-1/3 flex shadow-lg m-2 flex-col items-center"
             >
               <div>
@@ -152,7 +152,7 @@ const Makeup = () => {
               </div>
             </Link>
             <Link
-              href="/product/tshirt"
+              href="/product/makeup"
               className="p-4 sm:w-1/2 lg:w-1/5 md:w-1/3 flex shadow-lg m-2 flex-col items-center"
             >
               <div>
@@ -176,7 +176,7 @@ const Makeup = () => {
               </div>
             </Link>
             <Link
-              href="/product/tshirt"
+              href="/product/makeup"
               className="p-4 sm:w-1/2 lg:w-1/5 md:w-1/3 flex shadow-lg m-2 flex-col items-center"
             >
               <div>
