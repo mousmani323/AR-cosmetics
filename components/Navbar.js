@@ -1,13 +1,19 @@
 "use client"
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, {useState} from "react";
 import { FaShoppingCart } from "react-icons/fa";
 import Dropdown from "./Dropdown";
+import { Button } from "reactstrap";
+import Sidecart from "./Sidecart";
 
 
 const Navbar = () => {
- 
+  const [isSidecartOpen, setIsSidecartOpen] = useState(false);
+
+  const toggleSidecart = () => {
+    setIsSidecartOpen(!isSidecartOpen);
+  };
 
   return (
     <div>
@@ -39,14 +45,15 @@ const Navbar = () => {
               About us
             </Link>
           </nav>
-          <Link
-            href="/cart"
+          <Button
+          onClick={toggleSidecart}
             className="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0"
           >
             <FaShoppingCart className="text-2xl" />
-          </Link>
+          </Button>
         </div>
       </header>
+      {isSidecartOpen && <Sidecart />}
     </div>
   );
 };
