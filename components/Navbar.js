@@ -6,11 +6,14 @@ import { FaShoppingCart } from "react-icons/fa";
 import Dropdown from "./Dropdown";
 import { Button } from "reactstrap";
 import Sidecart from "./Sidecart";
+import { useCart } from '../context/CartContext';
 
 
 const Navbar = () => {
-  const [isSidecartOpen, setIsSidecartOpen] = useState(false);
 
+  const { cart, clearCart, addToCart, removeFromCart, subTotal } = useCart();
+
+  const [isSidecartOpen, setIsSidecartOpen] = useState(false);
   const toggleSidecart = () => {
     setIsSidecartOpen(!isSidecartOpen);
   };
