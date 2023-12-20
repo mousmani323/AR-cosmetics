@@ -1,10 +1,15 @@
+"use client";
+
+import { useRouter } from "next/navigation";
 import { Fragment, useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import { XMarkIcon } from "@heroicons/react/24/outline";
 import { useCart } from "../context/CartContext";
-import {AiOutlinePlusCircle , AiOutlineMinusCircle} from 'react-icons/ai'
+import { AiOutlinePlusCircle, AiOutlineMinusCircle } from "react-icons/ai";
 
 export default function Sidecart() {
+  const router = useRouter();
+
   const [open, setOpen] = useState(true);
   const { cart, clearCart, addToCart, removeFromCart, subTotal } = useCart();
 
@@ -61,7 +66,11 @@ export default function Sidecart() {
                             role="list"
                             className="-my-6 divide-y divide-gray-200"
                           >
-                            {Object.keys(cart).length == 0 && <div className="mt-10 text-center font-semibold">Your cart is empty!</div>}
+                            {Object.keys(cart).length == 0 && (
+                              <div className="mt-10 text-center font-semibold">
+                                Your cart is empty!
+                              </div>
+                            )}
                             {Object.keys(cart).map((k) => (
                               <li key={k} className="flex py-6">
                                 <div className="h-24 w-24 flex-shrink-0 overflow-hidden rounded-md border border-gray-200">
@@ -83,15 +92,45 @@ export default function Sidecart() {
                                     </p>
                                   </div>
                                   <div className="flex flex-1 items-end justify-between text-sm">
-                                  <AiOutlineMinusCircle onClick={()=> {removeFromCart(k , 1 ,cart[k].price , cart[k].name , cart[k].size, cart[k].variant)}} className="cursor-pointer" />
+                                    <AiOutlineMinusCircle
+                                      onClick={() => {
+                                        removeFromCart(
+                                          k,
+                                          1,
+                                          cart[k].price,
+                                          cart[k].name,
+                                          cart[k].size,
+                                          cart[k].variant
+                                        );
+                                      }}
+                                      className="cursor-pointer"
+                                    />
                                     <p className="text-gray-500">
                                       Qty {cart[k].qty}
                                     </p>
-                                    <AiOutlinePlusCircle onClick={()=> {addToCart(k , 1 ,cart[k].price , cart[k].name , cart[k].size, cart[k].variant)}} className="cursor-pointer"/>
+                                    <AiOutlinePlusCircle
+                                      onClick={() => {
+                                        addToCart(
+                                          k,
+                                          1,
+                                          cart[k].price,
+                                          cart[k].name,
+                                          cart[k].size,
+                                          cart[k].variant
+                                        );
+                                      }}
+                                      className="cursor-pointer"
+                                    />
 
                                     <div className="flex">
                                       <button
                                         type="button"
+                                        onClick={() => {
+                                          delete cart[k]
+                                          removeFromCart(
+                                            k,
+                                            1
+                                          )}}
                                         className="font-medium text-red-600 hover:text-red-500"
                                       >
                                         Remove
@@ -109,13 +148,19 @@ export default function Sidecart() {
                     <div className="border-t border-gray-200 px-4 py-6 sm:px-6">
                       <div className="flex justify-between text-base font-medium text-gray-900">
                         <p>Subtotal</p>
-                        <p>$262.00</p>
+                        <p>{subTotal}</p>
                       </div>
                       <p className="mt-0.5 text-sm text-gray-500">
                         Shipping and taxes calculated at checkout.
                       </p>
                       <div className="mt-6 flex justify-around">
-                        <button className=" items-center  rounded-md border border-transparent bg-red-400 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-red-200">
+                        <button
+                          onClick={() => {
+                            router.push("/checkout");
+                            setOpen(false);
+                          }}
+                          className=" items-center  rounded-md border border-transparent bg-red-400 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-red-200"
+                        >
                           Checkout
                         </button>
                         <button

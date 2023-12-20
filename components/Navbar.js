@@ -19,7 +19,7 @@ const Navbar = () => {
   };
 
   return (
-    <div>
+    <div className="sticky top-0 z-10">
       <header className="text-gray-700 body-font bg-red-200 mb-4 shadow-md">
         <div className="container mx-auto flex flex-wrap p-4 flex-col md:flex-row items-center">
           <Link
